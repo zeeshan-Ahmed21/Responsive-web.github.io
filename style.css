@@ -781,7 +781,7 @@ a:hover{
     }
     /* sec2 */
     .container2{
-        border: 1px solid;
+        /* border: 1px solid; */
         width: 80%;
     }
     .card1{
@@ -1005,7 +1005,7 @@ a:hover{
     }
     /* sec2 */
     .container2{
-        border: 1px solid;
+        /* border: 1px solid; */
         width: 90%;
     }
     .card1{
@@ -1134,6 +1134,9 @@ a:hover{
     }
     .travelcard1{
         width: 49%;
+    }
+    .travelcard1 p{
+        font-size: 14px;
     }
     /* sec5 */
     .container6{
