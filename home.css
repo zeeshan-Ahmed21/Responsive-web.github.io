@@ -1,0 +1,1374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease;
+}
+.container{
+    /* border: 1px solid; */
+    height: 98vh;
+    margin: 8px;
+    border-radius: 15px;
+}
+.container1{
+    /* border: 1px solid; */
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(background-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: end;
+}
+.navbar{
+    /* border: 1px solid; */
+    height: 70px;
+    width: 97%;
+    border-radius: 15px;
+    position: fixed;
+    top: 20px;
+    left: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+}
+.navheading{
+    font-size: 18px;
+    color: white;
+}
+.navlinks{
+    /* border: 1px solid; */
+    width: 800px;
+    height: 80px;
+}
+.navlinks ul{
+    display: flex;
+    justify-content: space-around;
+}
+.navlinks1{
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+.navlinks1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+}
+.navlinks1::after{
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease;
+}
+.navlinks1:hover::after{
+    transform: scale(1, 1);
+}
+.navlinks a{
+    text-decoration: none;
+}
+.navbutton{
+    /* border: 1px solid; */
+    display: flex;
+    color: #ffffff;
+}
+.navbutton button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 5px;
+    background: none;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+.navbutton button:hover{
+    background-color: #ffffff;
+    color: black;
+    border-color: #ffffff;
+}
+.toptext{
+    /* border: 1px solid; */
+    height: 97%;
+    width: 100%;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.toptext h4{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+.toptext h1{
+    font-size: 50px;
+    max-width: 800px;
+    text-align: center;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.toptext p{
+    max-width: 660px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+.toptextsearch{
+    /* border: 1px solid; */
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+.toptextsearch i{
+    color: black;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+#search{
+    height: 50px;
+    width: 500px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.toptextsearch button{
+    padding: 5px 25px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #00404f;
+    color: #ffffff;
+    margin-right: 5px;
+}
+.container2{
+    /* border: 1px solid; */
+    /* height: 50vh; */
+    width: 88vw;
+    margin: auto;
+}
+.container2sec{
+    /* border: 1px solid; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 20px;
+}
+.card1{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    /* height: 80%; */
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+
+}
+.sec1{
+    /* border: 1px solid; */
+    height: 150px;
+    width: 40%;
+    margin: auto;
+    background-image: url(Tool/planning.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sec2{
+    /* border: 1px solid; */
+    /* height: 140px; */
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.sec2 h3{
+    margin-bottom: 10px;
+}
+.card2{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    /* height: 80%; */
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+.card2 .sec1{
+    /* border: 1px solid; */
+    height: 150px;
+    width: 40%;
+    margin: auto;
+    background-image: url(Tool/map.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.card3{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    /* height: 80%; */
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+.card3 .sec1{
+    /* border: 1px solid; */
+    height: 150px;
+    width: 40%;
+    margin: auto;
+    background-image: url(Tool/trust.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.card1:hover{
+    border: 1px solid;
+    box-shadow: none;
+    transition: all 0.3s;
+}
+.card2:hover{
+    border: 1px solid;
+    box-shadow: none;
+    transition: all 0.3s;
+}
+.card3:hover{
+    border: 1px solid;
+    box-shadow: none;
+    transition: all 0.3s;
+}
+#hd{
+    margin-left: 80px;
+    margin-top: 20px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.container3{
+    /* border: 1px solid; */
+    /* height: 900px; */
+    width:90%;
+    margin: auto;
+}
+.container3heading{
+    /* border: 1px solid; */
+    height: 190px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.container3heading h3{
+    /* border: 1px solid; */
+    max-width: 290px;
+    font-size: 30px;
+}
+.container3heading p{
+    /* border: 1px solid; */
+    max-width: 600px;
+    line-height: 25px;
+}
+.cardsec{
+    /* border: 1px solid; */
+    /* height: 79%; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+.cncard1{
+    /* border: 1px solid; */
+    height: 400px;
+    width: 55%;
+    background-image: url(Destination/destinations-5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.cncard2{
+    /* border: 1px solid; */
+    height: 400px;
+    width: 40%;
+    background-image: url(Destination/destinations-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.cncard3{
+    /* border: 1px solid; */
+    height: 400px;
+    width: 25%;
+    background-image: url(Destination/destinations-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.cncard4{
+    /* border: 1px solid; */
+    height: 400px;
+    width: 49%;
+    background-image: url(Destination/destinations-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.cncard5{
+    /* border: 1px solid; */
+    height: 400px;
+    width: 20%;
+    background-image: url(Destination/destinations-4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.cdborder{
+    border-radius: 15px;
+}
+/* Section of Container4 */
+.container4{
+    /* border: 1px solid; */
+    /* height: 700px; */
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.dealscard1{
+    /* border: 1px solid; */
+    height: 360px;
+    width: 55%;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 20px;
+}
+.imagesec{
+    /* border: 1px solid; */
+    height: 200px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.imagesec img{
+    height: 150px;
+    width: 300px;
+}
+.imagesec button{
+    padding: 10px 20px;
+    background-color: #00404f;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 15px;
+}
+.imagesec button:hover{
+    background-color: #ffffff;
+    border-color: #00404f;
+    color: black;
+    cursor: pointer;
+}
+.dealscard2{
+    /* border: 1px solid; */
+    height: 360px;
+    width: 40%;
+    background-image: url(deals-image/featured-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: end;
+}
+.dealsec{
+    /* border: 1px solid; */
+    height: 200px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 20px;
+    cursor: pointer;
+}
+.dealsec p{
+    margin-top: 5px;
+    width: 250px;
+}
+.dealsec h6{
+    margin-top: 5px;
+    font-size: 15px;
+    width: 200px;
+}
+.dealsec h6::before{
+    content:"⭐";
+}
+.dealsec button{
+    padding: 10px 20px;
+    background-color: #00404f;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 15px;
+    float: right;
+}
+.dealsec button:hover{
+    background-color: #ffffff;
+    border-color: #00404f;
+    color: black;
+    cursor: pointer;
+}
+.dealscard3{
+    /* border: 1px solid; */
+    height: 360px;
+    width: 50%;
+    background-image: url(deals-image/featured-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: end;
+}
+.dealscard4{
+    /* border: 1px solid; */
+    height: 360px;
+    width: 45%;
+    background-image: url(deals-image/featured-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: end;
+}
+.container5{
+    /* border: 1px solid; */
+    /* height: 800px; */
+    width: 100%;
+    margin-top: 20px;
+    background-image: url(background-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.cardheading{
+    /* border: 1px solid; */
+    /* height: 200px; */
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+.cardheading h4{
+    margin-top: 20px;
+}
+.cardheading h1{
+    margin-top: 30px;
+}
+.cardheading p{
+    margin-top: 25px;
+}
+.travelcard{
+    /* border: 1px solid; */
+    /* height: 600px; */
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.travelcardsec{
+    /* border: 1px solid; */
+    /* height: 400px; */
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.travelcard1{
+    /* border: 1px solid; */
+    height: 230px;
+    width: 400px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+.travelcard1 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.travelcardhd{
+    display: flex;
+}
+.travelcardhd h4{
+    color: rgba(26, 25, 25, 0.808);
+}
+.travelcard1 p{
+    margin-top: 15px;
+    text-align: justify;
+}
+/* section of container6 */
+.container6{
+    /* border: 1px solid; */
+    /* height: 900px; */
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    /* display: flex;
+    align-items: end;
+    justify-content: center; */
+}
+.c6heading{
+    /* border: 1px solid; */
+    height: 100px;
+}
+.c6heading h4{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.c6heading h1{
+    font-size: 46px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.c6center{
+    /* border: 1px solid; */
+    /* height: 600px; */
+    /* width: 1400px; */
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    margin: auto;
+}
+.cs1{
+    /* border: 1px solid; */
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+    background-image: url(About/hidden-game.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.cscard{
+    /* border: 1px solid; */
+    height: 700px;
+    margin: auto;
+}
+.cscard img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.c6image{
+    display: flex;
+    align-items: center;
+}
+.cscard h1{
+    margin-top: 10px;
+}
+.cscard h4{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.cs2{
+    /* border: 1px solid; */
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+}
+.cs3{
+    /* border: 1px solid; */
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+}
+.cs4{
+    /* border: 1px solid; */
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+}
+.cs5{
+    /* border: 1px solid; */
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+}
+.cscard2{
+    /* border: 1px solid; */
+    /* width: 550px; */
+}
+.card2hd{
+    padding-left: 10px;
+}
+.card2hd h6{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.733);
+}
+/* Footer container */
+.container7{
+    /* border: 1px solid; */
+    /* height: 500px; */
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+}
+.footer{
+    /* border: 1px solid; */
+    height: 450px;
+    width: 100%px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background-color: #112a34;
+    color: #ffffff;
+}
+.fsec1{
+    /* border: 1px solid; */
+    height: 400px;
+    width: 40%;
+    padding: 20px;
+    color:rgba(255, 255, 255, 0.8);
+}
+.fsec1 h5{
+    border-bottom: 3px solid rgb(0, 206, 228);
+    width: 130px;
+}
+.fsec1 h5:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+.fsec1 h1{
+    color: #ffffff;
+}
+.fsec1 p{
+    margin-top: 30px;
+}
+.fsec1 h3{
+    margin-top: 30px;
+}
+.icon{
+    font-size: 30px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+#icon{
+    margin-right: 20px;
+}
+.fsec2{
+    /* border: 1px solid; */
+    height: 400px;
+    width: 20%;
+    color:rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+.fsec2 h1{
+    color: #ffffff;
+}
+.fsec3{
+    /* border: 1px solid; */
+    height: 400px;
+    width: 20%;
+    color:rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+.fsec3 h1{
+    color: #ffffff;
+}
+.fsec4{
+    /* border: 1px solid; */
+    height: 400px;
+    width: 20%;
+    color:rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+.fsec4 h1{
+    color: #ffffff;
+}
+li{
+    list-style: none;
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.8);
+    transition: all 0.5s ease 0s;
+}
+a:hover{
+    color: #ffffff;
+}
+@media only screen and (max-width: 480px) {
+    .container{
+        /*  max-width: 435px;
+        max-height: 760px; */
+        /* width: 100%; */
+    }
+    .container1{
+    width: 100%;
+    }
+    .navbar{
+        width: 90%;
+        left: 20px;
+    }
+    .navbar button{
+        padding: 5px 15px;
+    }
+    .navbar h2{
+        font-size: 23px;
+    }
+    .navlinks{
+        display: none;
+    }
+    .toptext h4{
+        font-size: 17px;
+        margin-bottom: 10px;
+        font-weight: bolder;
+    }
+    .toptext h1{
+        font-size: 20px;
+        margin-bottom: 13px;
+        font-weight: bolder;
+    }
+    .toptext p{
+        font-size: 12px;
+    }
+    .toptextsearch{
+        max-width: 330px;
+        font-size: 10px;
+    }
+    #search{
+        font-size: 10px;
+    }
+    .container2sec{
+        display: block;
+    }
+    .card2{
+        margin-top: 20px;
+    }
+    .card3{
+        margin-top: 20px;
+    }
+    #hd{
+        margin-left: 20px;
+    }
+    .cardsec{
+        display: block;
+    }
+    .dealscard1{
+        width: 500px;
+        font-size: 15px;
+    }
+    .dealscard1 p{
+        font-size: 15px;
+    }
+    .dealscard1 h1{
+        font-size: 15px;
+    }
+    .imagesec img{
+        width: 100px;
+        height: 100px;
+        margin-top: 0px;
+        display: block;
+    }
+    .imagesec{
+        height: 80px;
+    }
+    /* sec2 */
+    .container2{
+        /* border: 1px solid; */
+        width: 80%;
+    }
+    .card1{
+        width: 100%;
+        height: 250px;
+    }
+    .card1 h3{
+        font-size: 19px;
+
+    }
+    .card1 p{
+        font-size: 12px;
+    }
+    .sec1{
+        height: 100px;
+    }
+    .card2{
+        width: 100%;
+        height: 250px;
+    }
+    .card2 h3{
+        font-size: 19px;
+
+    }
+    .card2 p{
+        font-size: 12px;
+    }
+    .card2 .sec1{
+        height: 100px;
+    }
+    .card3{
+        width: 100%;
+        height: 250px;
+    }
+    .card3 h3{
+        font-size: 19px;
+
+    }
+    .card3 p{
+        font-size: 12px;
+    }
+    .card3 .sec1{
+        height: 100px;
+    }
+    /* sec3 */
+    .container3{
+        width: 100%;
+        padding: 15px;
+    }
+    .container3heading{
+        display: block;
+        width: 100%;
+    }
+    .container3heading h3{
+        width: auto;
+        height: auto;
+        font-size: 23px;
+    }
+    .container3heading p{
+        font-size: 14px;
+    }
+    .cdborder{
+        width: 100%;
+        height: 200px;
+        margin-top: 15px;
+    }
+    /* sec3 */
+    .dealscard1 h4{
+        font-size: 11px;
+    }
+    .dealscard1 p{
+        font-size: 10px;
+    }
+    .imagesec img{
+        width: 177px;
+    }
+    .dealsec{
+        height: 111px;
+    }
+    .dealsec h6{
+        font-size: 11px;
+    }
+    .dealsec button{
+        padding: 5px 10px;
+    }
+    .dealsec h1{
+        font-size: 18px;
+    }
+    .dealsec p{
+        font-size: 13px;
+    }
+    /* sec4 */
+    .container5{
+        width: 100%;
+        background-size: cover;
+    }
+    .travelcardsec{
+        width: 100%;
+    }
+    .cardheading h1{
+        font-size: 20px;
+    }
+    .cardheading p{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    /* sec5 */
+    .container6{
+        width: 100%;
+    }
+    .c6heading h1{
+        font-size: 30px;
+    }
+    .cscard h1{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .cscard img{
+        margin-left: 10px;
+    }
+    /* sec6 */
+    .container7{
+        padding: 0;
+    }
+    .footer{
+        width: 100%;
+        height: auto;
+    }
+    .fsec1{
+        width: 100%;
+    }
+    .fsec2{
+        width: 100%;
+    }
+    .fsec3{
+        width: 100%;
+    }
+    .fsec4{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .container{
+        /*  max-width: 435px;
+        max-height: 760px; */
+        /* width: 100%; */
+    }
+    .container1{
+    width: 100%;
+    }
+    .navbar{
+        height: auto;
+        width: 96%;
+        left: 14px;
+        /* display: block; */
+    }
+    .navbar button{
+        padding: 5px 15px;
+    }
+    .navbar h2{
+        font-size: 23px;
+    }
+    .navlinks{
+        width: auto;
+    }
+    .navlinks li{
+        font-size: 15px;
+        margin-left: 10px;
+    
+    }
+    .navlinks ul{
+        /* display: block; */
+    }
+    .toptext h4{
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bolder;
+    }
+    .toptext h1{
+        font-size: 30px;
+        width: 400px;
+        margin-bottom: 13px;
+        font-weight: bolder;
+    }
+    .toptext p{
+        font-size: 16px;
+        font-weight: 500;
+        width: 500px;
+    }
+    .toptextsearch{
+        max-width: 460px;
+        font-size: 10px;
+    }
+    #search{
+        font-size: 16px;
+    }
+    .container2sec{
+        display: flex;
+    }
+    #hd{
+        margin-left: 20px;
+    }
+    .dealscard1{
+        width: 500px;
+        font-size: 15px;
+    }
+    .dealscard1 p{
+        font-size: 15px;
+    }
+    .dealscard1 h1{
+        font-size: 15px;
+    }
+    .imagesec img{
+        width: 100px;
+        height: 100px;
+        margin-top: 0px;
+        display: block;
+    }
+    .imagesec{
+        height: 80px;
+    }
+    /* sec2 */
+    .container2{
+        /* border: 1px solid; */
+        width: 90%;
+    }
+    .card1{
+        width: 100%;
+        /* height: 250px; */
+    }
+    .card1 h3{
+        font-size: 13px;
+
+    }
+    .card1 p{
+        font-size: 12px;
+    }
+    .sec1{
+        height: 100px;
+    }
+    .card2{
+        width: 100%;
+        /* height: 250px; */
+    }
+    .card2 h3{
+        font-size: 15px;
+
+    }
+    .card2 p{
+        font-size: 12px;
+    }
+    .card2 .sec1{
+        height: 100px;
+    }
+    .card3{
+        width: 100%;
+        /* height: 250px; */
+    }
+    .card3 h3{
+        font-size: 13px;
+
+    }
+    .card3 p{
+        font-size: 12px;
+    }
+    .card3 .sec1{
+        height: 100px;
+    }
+    /* sec3 */
+    .container3{
+        width: 100%;
+        padding: 15px;
+    }
+    .container3heading{
+        display: block;
+        width: 100%;
+    }
+    .container3heading h3{
+        width: auto;
+        height: auto;
+        font-size: 23px;
+    }
+    .container3heading p{
+        font-size: 14px;
+    }
+    .cdborder{
+        width: 49%;
+        height: 200px;
+        /* margin-top: 15px; */
+    }
+    .cncard5{
+        width: 100%;
+    }
+    /* sec3 */
+    .dealscard1 h4{
+        font-size: 11px;
+    }
+    .dealscard1 p{
+        font-size: 10px;
+    }
+    .imagesec img{
+        width: 140px;
+        height: 50px;
+    }
+    .dealsec{
+        height: 111px;
+    }
+    .dealsec h6{
+        font-size: 11px;
+    }
+    .dealsec button{
+        padding: 5px 10px;
+    }
+    .dealsec h1{
+        font-size: 18px;
+    }
+    .dealsec p{
+        font-size: 13px;
+    }
+    .container4{
+        gap: 10px;
+    }
+    .dealscard1{
+        width: 49%;
+    }
+    .dealscard2{
+        width: 49%;
+    }
+    .dealscard3{
+        width: 49%;
+    }
+    .dealscard4{
+        width: 49%;
+    }
+    /* sec4 */
+    .container5{
+        width: 100%;
+        background-size: cover;
+    }
+    .travelcardsec{
+        width: 100%;
+        gap: 10px;
+    }
+    .cardheading h1{
+        font-size: 20px;
+    }
+    .cardheading p{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .travelcard1{
+        width: 49%;
+    }
+    .travelcard1 p{
+        font-size: 14px;
+    }
+    /* sec5 */
+    .container6{
+        width: 100%;
+    }
+    .c6heading h1{
+        font-size: 30px;
+    }
+    .cscard h1{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .cscard img{
+        margin-left: 10px;
+    }
+    /* sec6 */
+    .container7{
+        padding: 0;
+    }
+    .footer{
+        width: 100%;
+        height: auto;
+    }
+    .fsec1{
+        width: 50%;
+    }
+    .fsec2{
+        width: 50%;
+    }
+    .fsec3{
+        width: 50%;
+    }
+    .fsec4{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .container{
+        /*  max-width: 435px;
+        max-height: 760px; */
+        /* width: 100%; */
+    }
+    .container1{
+    width: 100%;
+    }
+    .travelcard1{
+        width: 32%;
+    }
+    
+}
+@media only screen and (min-width: 2000px) {
+    .navheading{
+        font-size: 30px;
+    }
+    .navlinks{
+        width: 1300px;
+    }
+    .navlinks li{
+        font-size: 35px;
+    }
+    .navbutton button{
+        padding: 10px 30px;
+        font-size: 25px;
+    }
+    .toptext h4{
+        font-size: 55px;
+    }
+    .toptext h1{
+        font-size: 90px;
+        max-width: 1400px;
+    }
+    .toptext p{
+        font-size: 40px;
+        max-width: 1400px;
+    }
+    .toptextsearch{
+        max-width: 1000px;
+    }
+    #search{
+        width: 1000px;
+        font-size: 30px;
+    }
+    /* sec2 */
+    .sec1{
+        height: 300px;
+    }
+    .card1{
+        width: 30%;
+        height: 550px;
+    }
+    .card1 h3{
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    .card1 p{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .card2{
+        width: 30%;
+        height: 550px;
+    }
+    .card2 .sec1{
+        height: 300px;
+    }
+    .card2 h3{
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    .card2 p{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .card3{
+        width: 30%;
+        height: 550px;
+    }
+    .card3 .sec1{
+        height: 300px;
+    }
+    .card3 h3{
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    .card3 p{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    /* sec3 */
+    #hd{
+        margin-left: 150px;
+        font-size: 50px;
+    }
+    .container3heading h3{
+        font-size: 60px;
+        max-width: 787px;
+    }
+    .container3heading p{
+        max-width: 1370px;
+    line-height: 48px;
+    font-size: 35px;
+    }
+    .cdborder{
+        height: 800px;
+    }
+    .cardsec{
+        gap: 30px;
+    }
+    /* sec4 */
+    .container4{
+        gap: 30px;
+    }
+    .dealscard1 h4{
+        font-size: 60px;
+    }
+    .dealscard1 h1{
+        font-size: 70px;
+        margin-top: 20px;
+    }
+    .dealscard1 p{
+        font-size: 50px;
+        margin-top: 20px;
+    }
+    .imagesec button{
+        padding: 20px 70px;
+        font-size: 30px;
+        border-radius: 50px;
+    }
+    .imagesec img{
+        width: 800px;
+        height: 250px;
+    }
+    .dealsec{
+        height: 340px;
+    }
+    .dealsec h1{
+        font-size: 60px;
+    }
+    .dealsec p{
+        font-size: 40px;
+        width: 500px;
+    }
+    .dealsec h6{
+        font-size: 40px;
+        width: 500px;
+    }
+    .dealsec button{
+        padding: 20px 40px;
+        font-size: 40px;
+        border-radius: 50px;
+    }
+    /* sec5 */
+    .travelcardsec{
+        width: auto;
+    }
+    .travelcard1{
+        height: 500px;
+    }
+    .travelcardhd{
+        align-items: center;
+    }
+    .travelcardhd img{
+        height: 200px;
+        width: 200px;
+    }
+    .travelcardhd h1{
+        font-size: 50px;
+        }
+        .travelcardhd h4{
+            font-size: 40px;
+        }
+        .travelcard1 p{
+            font-size: 40px;
+        }
+        /* last footer */
+        .footer{
+            height: auto;
+        }
+        .fsec1{
+            font-size: 45px;
+            height: auto;
+        }
+        .fsec2{
+            font-size: 45px;
+            height: auto;
+        }
+        .fsec3{
+            font-size: 45px;
+            height: auto;
+        }
+        .fsec4{
+            font-size: 45px;
+            height: auto;
+        }
+}
