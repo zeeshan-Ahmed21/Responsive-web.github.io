@@ -9,6 +9,57 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+.otpbox{
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    animation: loginsection 2s;
+    display: none;
+    /* border: 1px solid; */
+    height: 270px;
+    width: 500px;
+    /* display: flex; */
+}
+.otptext{
+    text-align: center;
+    /* border: 1px solid; */
+    height: 50px;
+    width: 100%;
+}
+.otp{
+    /* border: 1px solid; */
+    border-radius: 5px;
+    height: 85px;
+    width: 70px;
+    font-size: 25px;
+    padding-left: 25PX;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+.otpnum{
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 140px;
+}
+.otpbutton{
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-radius: 20px;
+    background-color: #00404f;
+    color: #ffffff;
+    box-shadow: 1px 1px 30px 5px #00404f;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-left: 180px;
+}
 .navbar{
     /* border: 1px solid; */
     height: 80px;

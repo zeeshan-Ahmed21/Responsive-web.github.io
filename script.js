@@ -73,11 +73,47 @@ function loginbutton(){
     let user = users.find(user => user.email === loginemail && user.password === loginpassword);
 
     if (user) {
-        alert("Login successful");
-        window.location.assign("home.html");
+        otp = Math.floor(100000 + Math.random() * 900000);
+        console.log(`Generated OTP: ${otp}`);
+        const dsec1 = document.getElementById("logsection");
+        const dsec2 = document.getElementById("regsection");
+        dsec1.style.display = "none";
+        dsec2.style.display = "none";
+        const otpboxopen = document.getElementById("boxopen");
+        otpboxopen.style.display = "block";
     } else {
         alert("Incorrect email or password");
     }
-
-
 }
+    function verfiotp(){
+        let otpInput = [
+            document.getElementById("otp1").value,
+            document.getElementById("otp2").value,
+            document.getElementById("otp3").value,
+            document.getElementById("otp4").value,
+            document.getElementById("otp5").value,
+            document.getElementById("otp6").value
+        ].join('');
+    
+        if (parseInt(otpInput) === otp) {
+            alert("OTP VERIFIED SUCCESSFUL");
+            console.log("OTP verified successfully");
+            
+            // Clear the OTP input fields and hide the OTP section
+            clearOtpFields();
+            document.getElementById("boxopen").style.display = "none";
+    
+             window.location.assign("home.html");
+        } else {
+            alert("OTP verification failed. Please try again.");
+            console.log("OTP verification failed");
+        }
+    }
+    function clearOtpFields() {
+        document.getElementById("otp1").value = '';
+        document.getElementById("otp2").value = '';
+        document.getElementById("otp3").value = '';
+        document.getElementById("otp4").value = '';
+        document.getElementById("otp5").value = '';
+        document.getElementById("otp6").value = '';
+    }
